@@ -5,7 +5,7 @@
 }
 
 .header {
-    background: #ffff;
+    background: #ffffff;
     color: rgb(0, 0, 0);
     padding: 40px;
     border-radius: 12px;
@@ -13,26 +13,43 @@
     margin-bottom: 30px;
 }
 
-.explore-button:hover {
-    background: #616161;
-    transform: scale(1.05);
+.explore-button {
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.image-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.side-image {
+    width: 100%; /* או גובה מותאם */
+    border-radius: 12px;
 }
 
 .cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 32px;
-    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    max-width: 300px; /* רוחב קבוע לרבועים */
     margin: auto;
 }
 
 .info-card {
     background: white;
-    padding: 12px;
+    padding: 8px; /* שיפוט של ריפוד */
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
-    height: 160px;
+    height: 120px; /* גובה קטן יותר */
 }
 
 .info-card:hover {
@@ -40,7 +57,26 @@
 }
 
 .icon {
-    font-size: 24px;
+    font-size: 20px; /* גודל קטן יותר */
     color: #757575;
-    margin-bottom: 8px;
+    margin-bottom: 4px; /* רווח קטן יותר */
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #757575;
+}
+.image-container {
+    flex: 1;
+    padding: 10px;
+    overflow: hidden; /* להסתיר כל תוכן החורג */
+}
+
+.side-image {
+    width: 100%; /* או גובה מותאם */
+    max-width: 800px; /* רוחב מקסימלי לתמונה */
+    max-height: 600px; /* גובה מקסימלי לתמונה */
+    object-fit: cover; /* לשמור על יחס התמונה */
+    border-radius: 12px;
 }
