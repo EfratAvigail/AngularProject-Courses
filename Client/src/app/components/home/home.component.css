@@ -15,6 +15,17 @@
 
 .explore-button {
     margin-top: 20px;
+    background-color: blue; /* צבע ברירת מחדל */
+    color: white; /* צבע הטקסט */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; /* מראה סמן כיד */
+    transition: background-color 0.3s; /* מעבר חלק */
+}
+
+.explore-button:hover {
+    background-color: pink; /* צבע הכפתור בעת ריחוף */
+    cursor: pointer; /* מוודא שהסמן נשאר כיד */
 }
 
 .content {
